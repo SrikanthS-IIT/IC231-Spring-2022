@@ -1,0 +1,21 @@
+Raspberry Pi Set up for IC231 Remote Access Labs
+Srikanth Sugavanam, Assistant Professor, School of Computing and Electrical Engineering, IIT Mandi
+18th January 2022
+
+
+Abstract
+
+The following is a document that provides information and links to resources on how to get your Raspberry Pi up and running for remote access lab sessions. The instructions provided here will allow you to set up the necessary files and Python libraries for access of the GPIO pins, and facilitating remote access of USB-based  devices. 
+
+
+Start.
+
+Equipment and packages used
+	1. Raspberry Pi 4B+
+	2. Raspbian OS version no. 
+	3. Python version
+	4. Pyvisa version
+	5. Thonny IDE
+	6. Pymeasure
+	7. Pandas
+
