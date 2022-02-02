@@ -1,4 +1,4 @@
-Raspberry Pi Set up for IC231 Remote Access Labs
+# Raspberry Pi Set up for IC231 Remote Access Labs
 Srikanth Sugavanam, Assistant Professor, School of Computing and Electrical Engineering, IIT Mandi
 18th January 2022
 
