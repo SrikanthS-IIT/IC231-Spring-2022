@@ -88,6 +88,37 @@ Now, it may so happen that Raspberry Pi is unable to connect to USB devices. Thi
 
 Essentially, to enable USB device identification, you will have to edit one of the rule files of the Raspberry Pi - OS as detailed in the above post (sounds scary, but it worked). After a reboot, if you run the same pyvisa code snippet, the USB device should then appear on the list. 
 
+How to change the rule file:
+
+1. Open file manager with root privileges using shell command: sudo pcmanfm
+2. Open the file: etc/udev/rules.de/99-com.rules
+3. Add to line 6: SUBSYSTEM=="usb", GROUP="usbusers", MODE="0666"
+4. Save and close the file
+
+Check if USB device can be found: 
+1. Open Python 3.x shell interpreter
+2. type: import visa
+3. type: resources = visa.ResourceManager('@py')
+4. type: resources.list_resources()
+5. check if an item is available in the form of: 'USB0::xxxx::xxxx::xxxxxxxx::0::INSTR'   (The x's represents alphanumerical values)
+
+E. Numpy version
+============================================
+The pymeasure requires NumPy library version of 1.20.1 or higher. Thus follow the following commands to check the version:
+
+1. Open Python 3.x shell interpreter
+2. type: import numpy
+3. type: numpy.version.version
+4. Check if the numpy version satisfies the above requirement
+5. If not type in the shell: pip3 install numpy --upgrade
+6. If a problem occurs with a dependency of "libatlas" type: sudo apt-get install libatlas-base-dev
+7. Repeat step 5 if required
+
+
+
+
+
+
 
 
 
