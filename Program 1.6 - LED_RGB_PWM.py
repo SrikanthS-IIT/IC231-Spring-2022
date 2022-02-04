@@ -42,8 +42,7 @@ soft_pwm_B = GPIO.PWM(LED_PIN_B,freq)
 soft_pwm_B.start(dutycycle_B)
 
 #Wait for keyboard input to stop programm
-print('Press any key to exit the program')
-input()
+input('Press any key to exit the program!')
 
 
 soft_pwm_R.stop()
