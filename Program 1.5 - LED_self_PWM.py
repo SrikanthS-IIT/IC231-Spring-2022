@@ -1,7 +1,6 @@
 import RPi.GPIO as gpio
 import time
 
-
 #Define the pin we want to control
 LED_PIN = 17
 #Enables to label using GPIO numbers instead of pin numbers
