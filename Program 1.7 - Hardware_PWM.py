@@ -1,6 +1,6 @@
 import pigpio
 import time
-#Before running this programm: Enable pigpiod daemeon bey executing command "sudo pigpiod"
+#Before running this programm: Enable pigpiod daemeon by executing command "sudo pigpiod"
 #Hardware PWM enables accuracy to a microsecond
 pi = pigpio.pi()
 
