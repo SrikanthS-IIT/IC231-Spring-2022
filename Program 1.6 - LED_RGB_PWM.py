@@ -4,7 +4,7 @@ import time
 
 
 #Defines the RGB pins
-LED_PIN_R = 17
+LED_PIN_R = 13
 LED_PIN_G = 27
 LED_PIN_B = 22
 
